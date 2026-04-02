@@ -1,0 +1,32 @@
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.AssemblyReference.cache
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FormLogin.resources
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FormMain.resources
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FormDocGia.resources
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FormSach.resources
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FormDoiMatKhau.resources
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FormMuonTra.resources
+C:\Users\joybo\Downloads\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.FormThongKe.resources
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.AssemblyReference.cache
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\obj\Debug\QuanLyThuVien.FormDocGia.resources
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\obj\Debug\QuanLyThuVien.FormDoiMatKhau.resources
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\obj\Debug\QuanLyThuVien.FormLogin.resources
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\obj\Debug\QuanLyThuVien.FormMain.resources
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\obj\Debug\QuanLyThuVien.FormMuonTra.resources
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\obj\Debug\QuanLyThuVien.FormSach.resources
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\obj\Debug\QuanLyThuVien.FormThongKe.resources
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+C:\Users\joybo\OneDrive\Máy tính\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
