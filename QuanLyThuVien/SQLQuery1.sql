@@ -1,0 +1,2 @@
+﻿ALTER TABLE Sach
+ADD Gia FLOAT;

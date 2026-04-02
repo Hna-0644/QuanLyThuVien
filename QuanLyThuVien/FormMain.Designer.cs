@@ -37,7 +37,6 @@
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.lblTieuDe = new System.Windows.Forms.Label();
             this.lblMoTa = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -134,13 +133,6 @@
             this.lblMoTa.TabIndex = 7;
             this.lblMoTa.Text = "Quản lý sách - độc giả - mượn trả";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(451, 351);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 30);
-            this.textBox1.TabIndex = 8;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -148,7 +140,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 653);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblMoTa);
             this.Controls.Add(this.lblTieuDe);
             this.Controls.Add(this.btnSach);
@@ -182,6 +173,5 @@
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.Label lblTieuDe;
         private System.Windows.Forms.Label lblMoTa;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }

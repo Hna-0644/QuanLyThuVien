@@ -43,13 +43,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtMaSach = new System.Windows.Forms.TextBox();
+            this.txtGia = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSach)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSoLuong
             // 
             this.txtSoLuong.Location = new System.Drawing.Point(145, 26);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(124, 30);
             this.txtSoLuong.TabIndex = 0;
@@ -57,7 +59,7 @@
             // txtTheLoai
             // 
             this.txtTheLoai.Location = new System.Drawing.Point(145, 137);
-            this.txtTheLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTheLoai.Margin = new System.Windows.Forms.Padding(4);
             this.txtTheLoai.Name = "txtTheLoai";
             this.txtTheLoai.Size = new System.Drawing.Size(124, 30);
             this.txtTheLoai.TabIndex = 1;
@@ -66,7 +68,7 @@
             // txtTacGia
             // 
             this.txtTacGia.Location = new System.Drawing.Point(145, 78);
-            this.txtTacGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTacGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtTacGia.Name = "txtTacGia";
             this.txtTacGia.Size = new System.Drawing.Size(124, 30);
             this.txtTacGia.TabIndex = 2;
@@ -74,15 +76,15 @@
             // txtTenSach
             // 
             this.txtTenSach.Location = new System.Drawing.Point(597, 82);
-            this.txtTenSach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenSach.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenSach.Name = "txtTenSach";
-            this.txtTenSach.Size = new System.Drawing.Size(124, 30);
+            this.txtTenSach.Size = new System.Drawing.Size(118, 30);
             this.txtTenSach.TabIndex = 3;
             // 
             // btnLamMoi
             // 
             this.btnLamMoi.Location = new System.Drawing.Point(784, 239);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(94, 33);
             this.btnLamMoi.TabIndex = 5;
@@ -93,7 +95,7 @@
             // btnXoa
             // 
             this.btnXoa.Location = new System.Drawing.Point(575, 239);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(94, 33);
             this.btnXoa.TabIndex = 6;
@@ -104,7 +106,7 @@
             // btnSua
             // 
             this.btnSua.Location = new System.Drawing.Point(328, 239);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(94, 33);
             this.btnSua.TabIndex = 7;
@@ -115,7 +117,7 @@
             // btnThem
             // 
             this.btnThem.Location = new System.Drawing.Point(125, 239);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(94, 33);
             this.btnThem.TabIndex = 8;
@@ -128,12 +130,13 @@
             this.dgvSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSach.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvSach.Location = new System.Drawing.Point(5, 308);
-            this.dgvSach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvSach.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSach.Name = "dgvSach";
             this.dgvSach.RowHeadersWidth = 51;
             this.dgvSach.RowTemplate.Height = 24;
             this.dgvSach.Size = new System.Drawing.Size(994, 336);
             this.dgvSach.TabIndex = 9;
+            this.dgvSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSach_CellContentClick);
             // 
             // label1
             // 
@@ -193,11 +196,29 @@
             this.txtMaSach.Size = new System.Drawing.Size(124, 30);
             this.txtMaSach.TabIndex = 15;
             // 
+            // txtGia
+            // 
+            this.txtGia.Location = new System.Drawing.Point(597, 137);
+            this.txtGia.Name = "txtGia";
+            this.txtGia.Size = new System.Drawing.Size(118, 30);
+            this.txtGia.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(500, 144);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(74, 23);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Giá       :";
+            // 
             // FormSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 647);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtGia);
             this.Controls.Add(this.txtMaSach);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -215,7 +236,7 @@
             this.Controls.Add(this.txtSoLuong);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormSach";
             this.Text = "FormSach";
             this.Load += new System.EventHandler(this.FormSach_Load);
@@ -242,5 +263,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtMaSach;
+        private System.Windows.Forms.TextBox txtGia;
+        private System.Windows.Forms.Label label6;
     }
 }
