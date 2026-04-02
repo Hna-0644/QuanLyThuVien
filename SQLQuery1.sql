@@ -1,0 +1,38 @@
+CREATE DATABASE QuanLyThuVien1;
+GO
+
+USE QuanLyThuVien1;
+GO
+
+CREATE TABLE TaiKhoan (
+    TenDangNhap NVARCHAR(50) PRIMARY KEY,
+    MatKhau NVARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Sach (
+    MaSach INT IDENTITY(1,1) PRIMARY KEY,
+    TenSach NVARCHAR(100) NOT NULL,
+    TacGia NVARCHAR(100),
+    TheLoai NVARCHAR(100),
+    SoLuong INT NOT NULL
+);
+
+CREATE TABLE DocGia (
+    MaDocGia INT IDENTITY(1,1) PRIMARY KEY,
+    HoTen NVARCHAR(100) NOT NULL,
+    SoDienThoai NVARCHAR(20),
+    DiaChi NVARCHAR(200)
+);
+
+CREATE TABLE MuonTra (
+    MaMuon INT IDENTITY(1,1) PRIMARY KEY,
+    MaDocGia INT,
+    MaSach INT,
+    NgayMuon DATE,
+    NgayTra DATE,
+    TrangThai NVARCHAR(50),
+    FOREIGN KEY (MaDocGia) REFERENCES DocGia(MaDocGia),
+    FOREIGN KEY (MaSach) REFERENCES Sach(MaSach)
+);
+
+INSERT INTO TaiKhoan VALUES (N'admin', N'123');
