@@ -44,8 +44,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtMaSach = new System.Windows.Forms.TextBox();
-            this.txtGia = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSach)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,6 +135,7 @@
             this.dgvSach.RowTemplate.Height = 24;
             this.dgvSach.Size = new System.Drawing.Size(994, 336);
             this.dgvSach.TabIndex = 9;
+            this.dgvSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSach_CellContentClick);
             // 
             // btnBack
             // 
@@ -149,7 +148,6 @@
             this.btnBack.Text = "Quay lại";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            this.dgvSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSach_CellContentClick);
             // 
             // label1
             // 
@@ -209,29 +207,11 @@
             this.txtMaSach.Size = new System.Drawing.Size(124, 30);
             this.txtMaSach.TabIndex = 15;
             // 
-            // txtGia
-            // 
-            this.txtGia.Location = new System.Drawing.Point(597, 137);
-            this.txtGia.Name = "txtGia";
-            this.txtGia.Size = new System.Drawing.Size(118, 30);
-            this.txtGia.TabIndex = 17;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(500, 144);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 23);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Giá       :";
-            // 
             // FormSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 647);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtGia);
             this.Controls.Add(this.txtMaSach);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -277,8 +257,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtMaSach;
-        private System.Windows.Forms.TextBox txtGia;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnBack;
     }
 }
