@@ -29,19 +29,11 @@ namespace QuanLyThuVien
             if (txtTenSach.Text.Trim() == "" ||
                 txtTacGia.Text.Trim() == "" ||
                 txtTheLoai.Text.Trim() == "" ||
-                txtGia.Text.Trim() == "" ||
                 txtSoLuong.Text.Trim() == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
                 return;
             }
-            int Gia;
-            if (!int.TryParse(txtGia.Text.Trim(), out Gia))
-            {
-                MessageBox.Show("Gia phải là số!");
-                return;
-            }
-
             int soLuong;
             if (!int.TryParse(txtSoLuong.Text.Trim(), out soLuong))
             {
@@ -61,7 +53,6 @@ namespace QuanLyThuVien
             LoadDanhSachSach();
             txtMaSach.Clear();
             txtTenSach.Clear();
-            txtTacGia.Clear();
             txtTheLoai.Clear();
             txtSoLuong.Clear();
         }
@@ -79,19 +70,12 @@ namespace QuanLyThuVien
                     MessageBox.Show("Số lượng phải là một số hợp lệ.");
                     return;
                 }
-                double gia;
-                if (!double.TryParse(txtGia.Text, out gia))
-                {
-                    MessageBox.Show("Giá phải là một số hợp lệ.");
-                    return;
-                }
-                string query = $"UPDATE Sach SET TenSach = N'{tenSach}', TacGia = N'{tacGia}', TheLoai = N'{theLoai}', SoLuong = {soLuong}, Gia = {gia} WHERE MaSach = {maSach}";
+                string query = $"UPDATE Sach SET TenSach = N'{tenSach}', TacGia = N'{tacGia}', TheLoai = N'{theLoai}', SoLuong = {soLuong},  WHERE MaSach = {maSach}";
                 db.ExecuteNonQuery(query);
                 dgvSach.SelectedRows[0].Cells["TenSach"].Value = tenSach;
                 dgvSach.SelectedRows[0].Cells["TacGia"].Value = tacGia;
                 dgvSach.SelectedRows[0].Cells["TheLoai"].Value = theLoai;
                 dgvSach.SelectedRows[0].Cells["SoLuong"].Value = soLuong;
-                dgvSach.SelectedRows[0].Cells["Gia"].Value = gia;
 
                 MessageBox.Show("Sửa thông tin sách thành công!");
             }
