@@ -16,6 +16,7 @@ namespace QuanLyThuVien
         {
             LoadDanhSachSach();
             txtMaSach.ReadOnly = true;
+            UIHelper.StyleDataGridView(dgvSach);
         }
 
         void LoadDanhSachSach()

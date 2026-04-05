@@ -16,6 +16,7 @@ namespace QuanLyThuVien
         {
             LoadDocGia();
             txtMaDocGia.ReadOnly = true;
+            UIHelper.StyleDataGridView(dgvDocGia);
         }
 
         void LoadDocGia()

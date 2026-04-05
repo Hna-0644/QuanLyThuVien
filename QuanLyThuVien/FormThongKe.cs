@@ -14,7 +14,7 @@ namespace QuanLyThuVien
 
         private void FormThongKe_Load(object sender, EventArgs e)
         {
-
+            UIHelper.StyleDataGridView(dgvThongKe);
         }
 
         private void btnDangMuon_Click(object sender, EventArgs e)

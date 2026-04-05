@@ -22,6 +22,8 @@ namespace QuanLyThuVien
             cboTrangThai.Items.Clear();
             cboTrangThai.Items.Add("Đang mượn");
             cboTrangThai.Items.Add("Đã trả");
+
+            UIHelper.StyleDataGridView(dgvMuonTra);
         }
 
         void LoadDocGia()
