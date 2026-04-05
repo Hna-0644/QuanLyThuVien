@@ -31,6 +31,7 @@
             this.btnQuaHan = new System.Windows.Forms.Button();
             this.btnDangMuon = new System.Windows.Forms.Button();
             this.dgvThongKe = new System.Windows.Forms.DataGridView();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongKe)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,12 +64,24 @@
             this.dgvThongKe.Size = new System.Drawing.Size(701, 244);
             this.dgvThongKe.TabIndex = 2;
             // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBack.Location = new System.Drawing.Point(700, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 30);
+            this.btnBack.TabIndex = 3;
+            this.btnBack.Text = "Quay lại";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // FormThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgvThongKe);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnDangMuon);
             this.Controls.Add(this.btnQuaHan);
             this.Name = "FormThongKe";
@@ -84,5 +97,6 @@
         private System.Windows.Forms.Button btnQuaHan;
         private System.Windows.Forms.Button btnDangMuon;
         private System.Windows.Forms.DataGridView dgvThongKe;
+        private System.Windows.Forms.Button btnBack;
     }
 }

@@ -59,5 +59,10 @@ namespace QuanLyThuVien
             LoadMuonTra();
             MessageBox.Show("Thêm phiếu mượn trả thành công!");
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

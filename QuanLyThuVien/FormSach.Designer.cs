@@ -37,6 +37,7 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.dgvSach = new System.Windows.Forms.DataGridView();
+            this.btnBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -136,6 +137,18 @@
             this.dgvSach.RowTemplate.Height = 24;
             this.dgvSach.Size = new System.Drawing.Size(994, 336);
             this.dgvSach.TabIndex = 9;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBack.Location = new System.Drawing.Point(900, 12);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(80, 30);
+            this.btnBack.TabIndex = 10;
+            this.btnBack.Text = "Quay lại";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             this.dgvSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSach_CellContentClick);
             // 
             // label1
@@ -226,6 +239,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvSach);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
@@ -265,5 +279,6 @@
         private System.Windows.Forms.TextBox txtMaSach;
         private System.Windows.Forms.TextBox txtGia;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnBack;
     }
 }

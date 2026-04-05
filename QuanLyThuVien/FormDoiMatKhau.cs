@@ -46,5 +46,10 @@ namespace QuanLyThuVien
                 MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu cũ!");
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

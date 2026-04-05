@@ -32,6 +32,7 @@
             this.txtMatKhauMoi = new System.Windows.Forms.TextBox();
             this.txtMatKhauCu = new System.Windows.Forms.TextBox();
             this.txtTenDangNhap = new System.Windows.Forms.TextBox();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDoiMatKhau
@@ -64,6 +65,17 @@
             this.txtTenDangNhap.Size = new System.Drawing.Size(100, 22);
             this.txtTenDangNhap.TabIndex = 3;
             // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBack.Location = new System.Drawing.Point(700, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 30);
+            this.btnBack.TabIndex = 4;
+            this.btnBack.Text = "Quay lại";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // FormDoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -73,6 +85,7 @@
             this.Controls.Add(this.txtMatKhauCu);
             this.Controls.Add(this.txtMatKhauMoi);
             this.Controls.Add(this.btnDoiMatKhau);
+            this.Controls.Add(this.btnBack);
             this.Name = "FormDoiMatKhau";
             this.Text = "FormDoiMatKhau";
             this.Load += new System.EventHandler(this.FormDoiMatKhau_Load);
@@ -87,5 +100,6 @@
         private System.Windows.Forms.TextBox txtMatKhauMoi;
         private System.Windows.Forms.TextBox txtMatKhauCu;
         private System.Windows.Forms.TextBox txtTenDangNhap;
+        private System.Windows.Forms.Button btnBack;
     }
 }

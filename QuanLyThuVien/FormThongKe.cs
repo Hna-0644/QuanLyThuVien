@@ -30,5 +30,10 @@ namespace QuanLyThuVien
                 "SELECT * FROM MuonTra WHERE NgayTra < GETDATE() AND TrangThai = N'Đang mượn'"
             );
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
