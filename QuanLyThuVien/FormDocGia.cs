@@ -26,12 +26,33 @@ namespace QuanLyThuVien
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string query = $"INSERT INTO DocGia(HoTen, SoDienThoai, DiaChi) VALUES (N'{txtHoTen.Text}', N'{txtSoDienThoai.Text}', N'{txtDiaChi.Text}')";
-            db.ExecuteNonQuery(query);
-            LoadDocGia();
-            MessageBox.Show("Thêm độc giả thành công!");
-        }
+            if (txtHoTen.Text.Trim() == "" ||
+                txtDiaChi.Text.Trim() == "" ||
+                txtSoDienThoai.Text.Trim() == "" )
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
+            int SoDienThoai;
+            if (!int.TryParse(txtSoDienThoai.Text.Trim(), out SoDienThoai))
+            {
+                MessageBox.Show("Số điện thoại phải là số!");
+                return;
+            }
 
+            string query = $@"INSERT INTO Sach (TenSach, TacGia, TheLoai, SoLuong)
+        VALUES (N'{txtHoTen.Text.Trim()}',
+                N'{txtDiaChi.Text.Trim()}',
+                {SoDienThoai})";
+
+            db.ExecuteNonQuery(query);
+
+            MessageBox.Show("Thêm sách thành công!");
+            LoadDocGia();
+            txtHoTen.Clear();
+            txtDiaChi.Clear();
+            txtSoDienThoai.Clear();
+        }
         private void btnSua_Click(object sender, EventArgs e)
         {
             string query = $"UPDATE DocGia SET HoTen=N'{txtHoTen.Text}', SoDienThoai=N'{txtSoDienThoai.Text}', DiaChi=N'{txtDiaChi.Text}' WHERE MaDocGia={txtMaDocGia.Text}";

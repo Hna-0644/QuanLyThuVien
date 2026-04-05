@@ -25,15 +25,12 @@ namespace QuanLyThuVien
         {
             this.BackColor = Color.WhiteSmoke;
             this.Font = new Font("Segoe UI", 10);
-
             StyleButton(btnSach, Color.SteelBlue);
             StyleButton(btnDocGia, Color.MediumSeaGreen);
             StyleButton(btnMuonTra, Color.Goldenrod);
             StyleButton(btnThongKe, Color.MediumPurple);
             StyleButton(btnDoiMatKhau, Color.SlateGray);
             StyleButton(btnDangXuat, Color.IndianRed);
-
-            // assign simple icons from SystemIcons for visual improvement
             try
             {
                 btnSach.Image = System.Drawing.SystemIcons.Application.ToBitmap();
@@ -44,13 +41,10 @@ namespace QuanLyThuVien
                 btnDangXuat.Image = System.Drawing.SystemIcons.Error.ToBitmap();
             }
             catch { }
-
-            // set MenuStrip as main menu if present
             try { this.MainMenuStrip = this.menuStrip1; } catch { }
 
             LoadDashboardCounts();
         }
-
         private void LoadDashboardCounts()
         {
             try
@@ -74,22 +68,18 @@ namespace QuanLyThuVien
         {
             new FormDocGia().ShowDialog();
         }
-
         private void btnMuonTra_Click(object sender, EventArgs e)
         {
             new FormMuonTra().ShowDialog();
         }
-
         private void btnThongKe_Click(object sender, EventArgs e)
         {
             new FormThongKe().ShowDialog();
         }
-
         private void btnDoiMatKhau_Click(object sender, EventArgs e)
         {
             new FormDoiMatKhau().ShowDialog();
         }
-
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             this.Close();
